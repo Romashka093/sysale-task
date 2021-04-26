@@ -1,0 +1,29 @@
+@value largeMobile: (min-width: 375px);
+@value tablet: (min-width: 768px);
+@value turnTablet: (min-width: 1024px);
+@value smallLaptop: (min-width: 1280px);
+@value laptop: (min-width: 1366px);
+@value desktop: (min-width: 1600px);
+@value largeDesktop: (min-width: 1920px);
+
+/*
+@value breakpoints: '../../../helpers/variables/breakpoints.module.css';
+@value largeMobile from breakpoints;
+@value tablet from breakpoints;
+@value turnTablet from breakpoints;
+@value smallLaptop from breakpoints;
+@value laptop from breakpoints;
+@value desktop from breakpoints;
+@value largeDesktop from breakpoints;
+*/
+
+
+/* 
+largeMobile
+tablet
+turnTablet
+smallLaptop
+laptop
+desktop
+largeDesktop
+*/

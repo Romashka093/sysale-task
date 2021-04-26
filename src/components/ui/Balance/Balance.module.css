@@ -1,0 +1,19 @@
+@value colors: '../../../helpers/variables/colors.module.css';
+@value backgroundPage from colors;
+@value shadow from colors;
+.ellipse {
+    position: relative;
+    background: backgroundPage;
+    box-shadow: 0px 0px 15px shadow;
+    border-radius: 30px;
+    width: 46px;
+    height: 46px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}

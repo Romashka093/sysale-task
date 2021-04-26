@@ -1,0 +1,35 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}

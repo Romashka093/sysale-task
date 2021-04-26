@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: local('SF UI Display Regular'), local('SF-UI-Display-Regular'), url('../fonts/sf_ui_display_regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/sf_ui_display_regular.woff') format('woff');
+    /* Firefox >= 3.6, any other modern browser */
+}
+
+@font-face {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: local('SF UI Display Medium'), local('SF-UI-Display-Medium'), url('../fonts/sf_ui_display_medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/sf_ui_display_medium.woff') format('woff');
+    /* Firefox >= 3.6, any other modern browser */
+}
+
+@font-face {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: local('SF UI Display Semibold'), local('SF-UI-Display-Semibold'), url('../fonts/sf_ui_display_semibold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/sf_ui_display_semibold.woff') format('woff');
+    /* Firefox >= 3.6, any other modern browser */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v27-latin-regular.woff') format('woff');
+    /* Modern Browsers */
+}

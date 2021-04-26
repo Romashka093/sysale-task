@@ -1,0 +1,70 @@
+.colorSelectorWrap {
+    position: relative;
+}
+
+.colorInput {
+    /* width: 258px; */
+    width: 150px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    border-style: none;
+    outline-style: none;
+    padding: 0 0 0 20px;
+}
+
+.colorInput::placeholder {
+    /* padding: 0 0 0 20px; */
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2c2c2c;
+    -webkit-appearance: none;
+}
+
+input[type='text']::-webkit-calendar-picker-indicator {
+    color: #00000000;
+    opacity: 1;
+}
+
+::-webkit-textfield-decoration-container {
+    position: relative;
+}
+
+input[type='text']::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.inputIcon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 5px;
+    padding: 10px;
+    background-image: url(../../../assets/img/ui/path_down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.inputIconActive {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-40%, -100%);
+    width: 8px;
+    height: 5px;
+    padding: 10px;
+    background-image: url(../../../assets/img/ui/path_up.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.listColors {}
+
+.colorItem {}

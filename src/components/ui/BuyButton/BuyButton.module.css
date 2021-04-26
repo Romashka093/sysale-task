@@ -1,0 +1,12 @@
+.buyButton {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(261.65deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+    border-radius: 30px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}

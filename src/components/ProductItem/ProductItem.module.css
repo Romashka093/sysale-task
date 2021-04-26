@@ -1,0 +1,66 @@
+@value colors: '../../helpers/variables/colors.module.css';
+@value breakpoints: '../../helpers/variables/breakpoints.module.css';
+@value backgroundProductItem from colors;
+@value largeMobile from breakpoints;
+@value tablet from breakpoints;
+@value turnTablet from breakpoints;
+@value smallLaptop from breakpoints;
+@value laptop from breakpoints;
+@value desktop from breakpoints;
+@value largeDesktop from breakpoints;
+.productItemWrap {
+    padding: 22px;
+    background-color: backgroundProductItem;
+    border-radius: 25px;
+    margin: 0 0 18px 0;
+}
+
+.productHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productColor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+.productFooter {
+    margin: 26px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media largeMobile {
+    .productItemWrap {
+        padding: 44px;
+    }
+}
+
+@media tablet {
+    /*  */
+}
+
+@media turnTablet {
+    /*  */
+}
+
+@media smallLaptop {
+    /*  */
+}
+
+@media laptop {
+    /*  */
+}
+
+@media desktop {
+    /*  */
+}
+
+@media largeDesktop {
+    /*  */
+}

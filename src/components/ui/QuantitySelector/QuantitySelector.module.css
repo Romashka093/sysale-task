@@ -1,0 +1,40 @@
+.wrap {
+    width: 92px;
+    height: 40px;
+    background: #e2e9f0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnMinus,
+.btnPlus {
+    background-color: #00000000;
+    border: none;
+    padding: 6px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.btnMinus {
+    padding: 6px 6px 14px;
+}
+
+.inputQuantity {}
+
+.inputQuantity {
+    -moz-appearance: textfield;
+    /* padding: 6px; */
+    /* margin-bottom: 15px; */
+    /* border-radius: 5px; */
+    border: none;
+    outline: none;
+    text-align: center;
+    background: transparent;
+    width: 70%;
+}
+
+.inputQuantity::-webkit-inner-spin-button {
+    display: none;
+}

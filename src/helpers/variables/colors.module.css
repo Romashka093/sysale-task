@@ -1,0 +1,39 @@
+@value backgroundInputNumber: #e2e9f0;
+@value mainText: #2c2c2c;
+@value backgroundPage: #ffffff;
+@value boldTeaxt: #000000;
+@value backgroundRadio: #dedede;
+@value backgroundBalance: #003466;
+@value backgroundProductItem: #f8fafc;
+
+/* yellow */
+
+@value yellowStart: #efbb37;
+@value yellowEnd: #cf9e1f;
+@value yellowFocusStart: #e9b32c;
+@value yellowFocusEnd: #bf911a;
+@value yellowClickedStart: #ffd773;
+@value yellowClickedEnd: #e2b645;
+@value yellowText: #fff8e4;
+
+/* red */
+
+@value backgroundRed: #f64b33;
+
+/* green */
+
+@value backgroundGreen: #87ac33;
+
+/* box-shadow */
+
+@value shadow: #0000001a;
+
+/* 
+@value colors: '../../../helpers/variables/colors.module.css';
+@value NAME from colors;
+@value NAME from colors;
+@value NAME from colors;
+@value NAME from colors;
+@value NAME from colors;
+@value NAME from colors;
+*/
