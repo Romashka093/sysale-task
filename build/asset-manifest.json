@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sysale-task/static/css/main.ac2e95ac.chunk.css",
-    "main.js": "/sysale-task/static/js/main.4a7389c7.chunk.js",
-    "main.js.map": "/sysale-task/static/js/main.4a7389c7.chunk.js.map",
-    "runtime-main.js": "/sysale-task/static/js/runtime-main.5b4fa1ff.js",
-    "runtime-main.js.map": "/sysale-task/static/js/runtime-main.5b4fa1ff.js.map",
-    "static/js/2.97ee53ab.chunk.js": "/sysale-task/static/js/2.97ee53ab.chunk.js",
-    "static/js/2.97ee53ab.chunk.js.map": "/sysale-task/static/js/2.97ee53ab.chunk.js.map",
-    "static/js/3.08f38152.chunk.js": "/sysale-task/static/js/3.08f38152.chunk.js",
-    "static/js/3.08f38152.chunk.js.map": "/sysale-task/static/js/3.08f38152.chunk.js.map",
+    "main.css": "/sysale-task/static/css/main.3ff85d2c.chunk.css",
+    "main.js": "/sysale-task/static/js/main.f7e40fea.chunk.js",
+    "main.js.map": "/sysale-task/static/js/main.f7e40fea.chunk.js.map",
+    "runtime-main.js": "/sysale-task/static/js/runtime-main.029de8ff.js",
+    "runtime-main.js.map": "/sysale-task/static/js/runtime-main.029de8ff.js.map",
+    "static/js/2.d2956bec.chunk.js": "/sysale-task/static/js/2.d2956bec.chunk.js",
+    "static/js/2.d2956bec.chunk.js.map": "/sysale-task/static/js/2.d2956bec.chunk.js.map",
+    "static/js/3.abe6bad8.chunk.js": "/sysale-task/static/js/3.abe6bad8.chunk.js",
+    "static/js/3.abe6bad8.chunk.js.map": "/sysale-task/static/js/3.abe6bad8.chunk.js.map",
     "index.html": "/sysale-task/index.html",
-    "static/css/main.ac2e95ac.chunk.css.map": "/sysale-task/static/css/main.ac2e95ac.chunk.css.map",
-    "static/js/2.97ee53ab.chunk.js.LICENSE.txt": "/sysale-task/static/js/2.97ee53ab.chunk.js.LICENSE.txt",
+    "static/css/main.3ff85d2c.chunk.css.map": "/sysale-task/static/css/main.3ff85d2c.chunk.css.map",
+    "static/js/2.d2956bec.chunk.js.LICENSE.txt": "/sysale-task/static/js/2.d2956bec.chunk.js.LICENSE.txt",
     "static/media/1_1.png": "/sysale-task/static/media/1_1.1a699a87.png",
     "static/media/1_2.png": "/sysale-task/static/media/1_2.d89d396c.png",
     "static/media/2_1.png": "/sysale-task/static/media/2_1.c5d92250.png",
@@ -21,9 +21,9 @@
     "static/media/ColorSelector.module.css": "/sysale-task/static/media/path_up.43efebd6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b4fa1ff.js",
-    "static/js/2.97ee53ab.chunk.js",
-    "static/css/main.ac2e95ac.chunk.css",
-    "static/js/main.4a7389c7.chunk.js"
+    "static/js/runtime-main.029de8ff.js",
+    "static/js/2.d2956bec.chunk.js",
+    "static/css/main.3ff85d2c.chunk.css",
+    "static/js/main.f7e40fea.chunk.js"
   ]
 }
