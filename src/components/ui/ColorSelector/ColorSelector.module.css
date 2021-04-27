@@ -1,70 +1,99 @@
-.colorSelectorWrap {
-    position: relative;
-}
-
-.colorInput {
-    /* width: 258px; */
+.dropBtn,
+.dropBtnActive {
+    text-align: start;
+    padding: 8px 0 8px 20px;
     width: 150px;
-    height: 30px;
     background: #ffffff;
-    border-radius: 15px;
     border-style: none;
     outline-style: none;
-    padding: 0 0 0 20px;
-}
-
-.colorInput::placeholder {
-    /* padding: 0 0 0 20px; */
-    align-items: center;
+    cursor: pointer;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: #2c2c2c;
-    -webkit-appearance: none;
 }
 
-input[type='text']::-webkit-calendar-picker-indicator {
-    color: #00000000;
-    opacity: 1;
+.dropBtn {
+    border-radius: 15px;
 }
 
-::-webkit-textfield-decoration-container {
+.dropBtnActive {
+    border-radius: 15px 15px 0 0;
+}
+
+.dropBtn:hover,
+.dropBtn:focus,
+.dropBtnActive:hover,
+.dropBtnActive:focus {
+    background-color: #ffffff;
+}
+
+.dropDown {
     position: relative;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2c2c2c;
 }
 
-input[type='text']::-webkit-calendar-picker-indicator {
-    cursor: pointer;
-}
-
-.inputIcon {
+.pathDown {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
+    top: 12px;
+    right: 16px;
     width: 8px;
-    height: 5px;
-    padding: 10px;
     background-image: url(../../../assets/img/ui/path_down.svg);
     background-repeat: no-repeat;
     background-position: center;
+    padding: 4px;
     cursor: pointer;
 }
 
-.inputIconActive {
+.pathUp {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-40%, -100%);
+    top: 12px;
+    right: 16px;
     width: 8px;
-    height: 5px;
-    padding: 10px;
     background-image: url(../../../assets/img/ui/path_up.svg);
     background-repeat: no-repeat;
     background-position: center;
+    padding: 4px;
     cursor: pointer;
 }
 
-.listColors {}
+.dropDown a {
+    padding: 6px 0 6px 20px;
+    text-decoration: none;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2c2c2c;
+}
 
-.colorItem {}
+.dropDown a:hover {
+    background-color: #f3f8fc;
+    padding: 6px 0 6px 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.dropDownContent {
+    display: none;
+}
+
+.isShow {
+    display: block;
+    position: absolute;
+    top: 30px;
+    background-color: #ffffff;
+    width: 150px;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 0 0 15px 15px;
+    height: 50px;
+}

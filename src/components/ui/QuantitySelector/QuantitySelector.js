@@ -18,7 +18,7 @@ function QuantitySelector({ amount, add, remove }) {
           />
         </svg>
       </button>
-      <input className={css.inputQuantity} type="number" value={amount} />
+      <span className={css.inputQuantity}>{amount}</span>
       <button onClick={add} className={css.btnPlus}>
         <svg
           width="8"

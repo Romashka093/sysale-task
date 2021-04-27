@@ -5,7 +5,7 @@ function Balance({ isBought }) {
   return (
     <>
       <div className={css.ellipse}>
-        {isBought ? (
+        {!isBought ? (
           <svg
             className={css.icon}
             width="13"

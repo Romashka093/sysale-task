@@ -1,34 +1,45 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import language from '../../../language';
 import css from './ColorSelector.module.css';
 
-function ColorSelector({ handlerChangeColor, id, isFocusedOnColorSelector }) {
+function ColorSelector({
+  handlerChangeColor,
+  handlerToggleColorSelector,
+  isColorSelector,
+  productColor,
+}) {
   return (
-    <div className={css.colorSelectorWrap}>
-      <input
-        className={css.colorInput}
-        type="text"
-        id={`colorChoose${id}`}
-        placeholder={language.ru.color}
-        name="colors"
-        list="colors"
-      />
-      <span
-        className={
-          isFocusedOnColorSelector ? css.inputIconActive : css.inputIcon
-        }
-      ></span>
-
-      <datalist className={css.listColors} id="colors">
-        <option className={css.colorItem} value={language.ru.yellow}></option>
-        <option className={css.colorItem} value={language.ru.red}></option>
-        <option className={css.colorItem} value={language.ru.green}></option>
-        {/* <option className={css.colorItem} value={language.ru.orange}></option> */}
-        {/* <option className={css.colorItem} value={language.ru.paleBlue}></option> */}
-        {/* <option className={css.colorItem} value={language.ru.blue}></option> */}
-        {/* <option className={css.colorItem} value={language.ru.purple}></option> */}
-      </datalist>
-    </div>
+    <>
+      <div onClick={handlerToggleColorSelector} className={css.dropDown}>
+        <button className={!isColorSelector ? css.dropBtn : css.dropBtnActive}>
+          {productColor}
+        </button>
+        <span className={!isColorSelector ? css.pathDown : css.pathUp}></span>
+        <div
+          id="myDropdown"
+          className={!isColorSelector ? css.dropDownContent : css.isShow}
+        >
+          <ul>
+            <li onClick={handlerChangeColor}>
+              <a href="#" name={language.ru.yellow}>
+                {language.ru.yellow}
+              </a>
+            </li>
+            <li onClick={handlerChangeColor}>
+              <a href="#" name={language.ru.red}>
+                {language.ru.red}
+              </a>
+            </li>
+            <li onClick={handlerChangeColor}>
+              <a href="#" name={language.ru.green}>
+                {language.ru.green}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 }
 

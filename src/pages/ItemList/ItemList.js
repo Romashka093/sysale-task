@@ -2,7 +2,6 @@ import React from 'react';
 import { products } from '../../helpers/data/products.js';
 import ProductItem from '../../components/ProductItem/ProductItem';
 import css from './ItemList.module.css';
-console.log(products);
 
 function ItemList() {
   return (
