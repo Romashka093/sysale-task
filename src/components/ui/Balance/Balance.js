@@ -3,9 +3,9 @@ import css from './Balance.module.css';
 
 function Balance({ isBought }) {
   return (
-    <>
+    <div className={css.balanceWrap}>
       <div className={css.ellipse}>
-        {!isBought ? (
+        {isBought ? (
           <svg
             className={css.icon}
             width="13"
@@ -37,7 +37,7 @@ function Balance({ isBought }) {
           </svg>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

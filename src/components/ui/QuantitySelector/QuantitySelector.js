@@ -4,7 +4,7 @@ import css from './QuantitySelector.module.css';
 function QuantitySelector({ amount, add, remove }) {
   return (
     <div className={css.wrap}>
-      <button onClick={remove} className={css.btnMinus}>
+      <button onClick={remove} className={css.btnMinus} name="minus">
         <svg
           width="8"
           height="1"
@@ -19,7 +19,7 @@ function QuantitySelector({ amount, add, remove }) {
         </svg>
       </button>
       <span className={css.inputQuantity}>{amount}</span>
-      <button onClick={add} className={css.btnPlus}>
+      <button onClick={add} className={css.btnPlus} name="plus">
         <svg
           width="8"
           height="9"

@@ -5,6 +5,9 @@
 @value backgroundRadio: #dedede;
 @value backgroundBalance: #003466;
 @value backgroundProductItem: #f8fafc;
+@value backgroundSelector: #d8e3ee;
+@value backgroundDropDown: #f3f8fc;
+@value backgroundEllipse: #f9fafc;
 
 /* yellow */
 
@@ -27,6 +30,9 @@
 /* box-shadow */
 
 @value shadow: #0000001a;
+@value productShadow: #0000000d;
+@value dropShadow: #e8cb80;
+@value productDropShadow: #c3d4e4;
 
 /* 
 @value colors: '../../../helpers/variables/colors.module.css';

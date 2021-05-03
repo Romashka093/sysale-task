@@ -11,7 +11,11 @@ function ColorSelector({
 }) {
   return (
     <>
-      <div onClick={handlerToggleColorSelector} className={css.dropDown}>
+      <div
+        onMouseEnter={handlerToggleColorSelector}
+        onMouseLeave={handlerToggleColorSelector}
+        className={css.dropDown}
+      >
         <button className={!isColorSelector ? css.dropBtn : css.dropBtnActive}>
           {productColor}
         </button>

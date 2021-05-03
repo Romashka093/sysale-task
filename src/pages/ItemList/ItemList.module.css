@@ -1,4 +1,61 @@
+@value breakpoints: '../../helpers/variables/breakpoints.module.css';
+@value largeMobile from breakpoints;
+@value tablet from breakpoints;
+@value turnTablet from breakpoints;
+@value smallLaptop from breakpoints;
+@value laptop from breakpoints;
+@value desktop from breakpoints;
+@value largeDesktop from breakpoints;
 .productsContainer {
     width: 280px;
-    /* margin: 0 auto; */
+}
+
+@media largeMobile {
+    .productsContainer {
+        width: 320px;
+    }
+}
+
+@media tablet {
+    .productsContainer {
+        width: 680px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+@media turnTablet {
+    .productsContainer {
+        width: 980px;
+    }
+}
+
+@media smallLaptop {
+    .productsContainer {
+        width: 1100px;
+    }
+}
+
+@media laptop {
+    .productsContainer {
+        width: 1280px;
+    }
+}
+
+@media desktop {
+    .productsContainer {
+        width: 1400px;
+    }
+}
+
+@media largeDesktop {
+    .productsContainer {
+        width: 1600px;
+    }
 }

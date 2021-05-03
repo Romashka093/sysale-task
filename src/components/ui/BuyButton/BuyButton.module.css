@@ -1,13 +1,60 @@
+@value colors: '../../../helpers/variables/colors.module.css';
+@value breakpoints: '../../../helpers/variables/breakpoints.module.css';
+@value backgroundPage from colors;
+@value yellowStart from colors;
+@value yellowEnd from colors;
+@value yellowFocusStart from colors;
+@value yellowFocusEnd from colors;
+@value yellowClickedStart from colors;
+@value yellowClickedEnd from colors;
+@value yellowText from colors;
+@value dropShadow from colors;
+@value largeMobile from breakpoints;
+@value tablet from breakpoints;
 .buyButton {
     width: 120px;
     height: 40px;
-    background: linear-gradient(261.65deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+    background: -o-linear-gradient( 188.35deg, yellowStart -3.95%, yellowEnd 109.44%);
+    background: linear-gradient(261.65deg, yellowStart -3.95%, yellowEnd 109.44%);
     border-radius: 30px;
     border: none;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
-    color: #ffffff;
+    color: backgroundPage;
     cursor: pointer;
+    -webkit-transition: -webkit-filter 1s ease-out;
+    transition: -webkit-filter 1s ease-out;
+    -o-transition: filter 1s ease-out;
+    transition: filter 1s ease-out;
+    transition: filter 1s ease-out, -webkit-filter 1s ease-out;
+}
+
+.buyButton:hover {
+    background: -o-linear-gradient( 188.35deg, yellowFocusStart -3.95%, yellowFocusEnd 109.44%);
+    background: linear-gradient( 261.65deg, yellowFocusStart -3.95%, yellowFocusEnd 109.44%);
+    -webkit-filter: drop-shadow(0px 0px 20px dropShadow);
+    filter: drop-shadow(0px 0px 20px dropShadow);
+}
+
+.buyButton:disabled {
+    background: -o-linear-gradient( 188.35deg, yellowClickedStart -3.95%, yellowClickedEnd 109.44%);
+    background: linear-gradient( 261.65deg, yellowClickedStart -3.95%, yellowClickedEnd 109.44%);
+    -webkit-filter: drop-shadow(0px 0px 20px dropShadow);
+    filter: drop-shadow(0px 0px 20px dropShadow);
+    color: yellowText;
+    cursor: not-allowed;
+}
+
+@media largeMobile {
+    .buyButton {
+        width: 60%;
+    }
+}
+
+@media tablet {
+    .buyButton {
+        width: 68%;
+    }
 }

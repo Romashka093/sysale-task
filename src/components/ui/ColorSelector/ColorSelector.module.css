@@ -1,9 +1,16 @@
+@value colors: '../../../helpers/variables/colors.module.css';
+@value breakpoints: '../../../helpers/variables/breakpoints.module.css';
+@value backgroundPage from colors;
+@value mainText from colors;
+@value backgroundDropDown from colors;
+@value largeMobile from breakpoints;
+@value laptop from breakpoints;
 .dropBtn,
 .dropBtnActive {
     text-align: start;
     padding: 8px 0 8px 20px;
     width: 150px;
-    background: #ffffff;
+    background: backgroundPage;
     border-style: none;
     outline-style: none;
     cursor: pointer;
@@ -11,7 +18,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #2c2c2c;
+    color: mainText;
 }
 
 .dropBtn {
@@ -26,19 +33,19 @@
 .dropBtn:focus,
 .dropBtnActive:hover,
 .dropBtnActive:focus {
-    background-color: #ffffff;
+    background-color: backgroundPage;
 }
 
 .dropDown {
     position: relative;
     display: inline-block;
-    background: #ffffff;
+    background: backgroundPage;
     border-radius: 15px;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #2c2c2c;
+    color: mainText;
 }
 
 .pathDown {
@@ -73,11 +80,20 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #2c2c2c;
+    color: mainText;
+    -webkit-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    -webkit-transition: padding 1s ease-out;
+    -o-transition: padding 1s ease-out;
+    transition: padding 1s ease-out;
+    -webkit-transition: border-radius 1s ease-out;
+    -o-transition: border-radius 1s ease-out;
+    transition: border-radius 1s ease-out;
 }
 
 .dropDown a:hover {
-    background-color: #f3f8fc;
+    background-color: backgroundDropDown;
     padding: 6px 0 6px 20px;
     border-radius: 0px 10px 10px 0px;
 }
@@ -90,10 +106,26 @@
     display: block;
     position: absolute;
     top: 30px;
-    background-color: #ffffff;
+    background-color: backgroundPage;
     width: 150px;
     overflow: auto;
     z-index: 1;
     border-radius: 0 0 15px 15px;
     height: 50px;
+}
+
+@media largeMobile {
+    .dropBtn,
+    .dropBtnActive,
+    .isShow {
+        width: 180px;
+    }
+}
+
+@media laptop {
+    .dropBtn,
+    .dropBtnActive,
+    .isShow {
+        width: 200px;
+    }
 }

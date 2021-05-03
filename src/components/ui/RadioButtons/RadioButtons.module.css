@@ -1,12 +1,19 @@
+@value colors: '../../../helpers/variables/colors.module.css';
+@value backgroundRadio from colors;
+@value yellowStart from colors;
+@value yellowEnd from colors;
 .btnName {
     margin: 0 0 0 12px;
 }
 
 .btnWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0 0 8px 0;
-    /* margin: 0 0 12px 0; */
 }
 
 input[type='radio'],
@@ -32,8 +39,10 @@ input[type='radio']::before {
     width: 22px;
     height: 22px;
     border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: #dedede;
+    background: backgroundRadio;
 }
 
 input[type='radio']:checked::after {
@@ -44,7 +53,10 @@ input[type='radio']:checked::after {
     width: 15px;
     height: 15px;
     border-radius: 5px;
-    background: linear-gradient(261.65deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+    background: -o-linear-gradient( 188.35deg, yellowStart -3.95%, yellowEnd 109.44%);
+    background: linear-gradient(261.65deg, yellowStart -3.95%, yellowEnd 109.44%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     visibility: visible;
 }

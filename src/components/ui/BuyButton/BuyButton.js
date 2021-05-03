@@ -1,10 +1,10 @@
 import React from 'react';
 import css from './BuyButton.module.css';
 
-function BuyButton({ title, submit, id }) {
+function BuyButton({ title, isBought }) {
   return (
     <>
-      <button onClick={submit} id={id} className={css.buyButton} type="submit">
+      <button className={css.buyButton} type="submit" disabled={isBought}>
         {title}
       </button>
     </>
